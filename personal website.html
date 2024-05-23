@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #ff6f61;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ff6f61;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e65e57;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .video-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .video-container video {
+            width: 100%;
+            max-width: 560px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>欢迎来到我的个人网页</h1>
+</header>
+
+<nav>
+    <a href="#about">个人简介</a>
+    <a href="#experience">工作经历</a>
+    <a href="#projects">产品展示</a>
+    <a href="#contact">联系方式</a>
+    <a href="#hobbies">兴趣爱好</a>
+</nav>
+
+<section id="about">
+    <h2>个人简介</h2>
+    <p>你好，我是Michael Zuo，一名有8年经验的外贸销售。我对健身器材领域充满热情，并且有丰富的行业经验。</p>
+</section>
+
+<section id="experience">
+    <h2>工作经历</h2>
+    <ul>
+        <li><strong>杭州艾龙健身器材有限公司</strong> - 外贸主管（2017/10/12 -至今）</li>
+        <!-- 继续添加更多工作经历 -->
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>产品展示</h2>
+    <div class="gallery">
+        <img src="product1.jpg" alt="产品1">
+        <img src="product2.jpg" alt="产品2">
+        <!-- 继续添加更多产品图片 -->
+    </div>
+    <div class="video-container">
+        <video width="100%" controls>
+            <source src="Factory_video.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>联系方式</h2>
+    <form class="contact-form">
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">电子邮件</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">留言</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">发送</button>
+    </form>
+</section>
+
+<section id="hobbies">
+    <h2>兴趣爱好</h2>
+    <p>在闲暇时间，我喜欢旅游、阅读和跑步。这使我能够放松并且获得新的灵感。</p>
+</section>
+
+<footer>
+    <p>© 2024 Michael Zuo - <a href="https://github.com/MichaelZuo" style="color:white;">GitHub</a> | <a href="https://linkedin.com/in/MichaelZuo" style="color:white;">LinkedIn</a></p>
+</footer>
+
+</body>
+</html>
